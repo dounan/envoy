@@ -29,6 +29,8 @@ static_resources:
                 route:
                   cluster: backend_grpc_service
           http_filters:
+          - name: envoy.grpc_http1_bridge
+            typed_config: {}
           - name: envoy.router
             typed_config: {}
   clusters:

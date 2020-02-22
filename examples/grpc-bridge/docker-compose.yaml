@@ -38,7 +38,7 @@ services:
     build:
       context: client
     environment:
-      - CLIENT_PROXY=http://kv-client-proxy:9911
+      - CLIENT_PROXY=kv-client-proxy:9911
     networks:
       envoymesh:
         aliases:
